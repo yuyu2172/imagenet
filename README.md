@@ -1,0 +1,14 @@
+# ImageNet Dataset Wrapper for Chainer
+
+
+```python
+from imagenet_dataset import get_imagenet
+
+
+urls = {'train': 'train download url', 'val': 'val download url',
+        'developers_kit': 'developers_kit download url'}
+
+train, val = get_imagenet(urls=urls)
+
+img, label = train[0]
+```
